@@ -3,12 +3,12 @@ import { NgModule } from '@angular/core';
 import { FormsModule }   from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { PessoaComponent } from './cadastro/pessoa/pessoa.component';
+import { CadastroPessoaComponent } from './cadastro/cadastro-pessoa/cadastro-pessoa.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PessoaComponent
+    CadastroPessoaComponent
   ],
   imports: [
     BrowserModule,

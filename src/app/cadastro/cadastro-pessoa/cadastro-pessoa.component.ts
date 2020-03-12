@@ -3,9 +3,9 @@ import { Pessoa } from './models/Pessoa';
 
 @Component({
   selector: 'app-pessoa',
-  templateUrl: 'pessoa.component.html'
+  templateUrl: 'cadastro-pessoa.component.html'
 })
-export class PessoaComponent implements OnInit {
+export class CadastroPessoaComponent implements OnInit {
 
   pessoa: Pessoa = new Pessoa;
   listaPessoa: Pessoa[] = []

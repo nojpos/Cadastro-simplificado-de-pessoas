@@ -12,10 +12,15 @@ export class CadastroPessoaComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    (document.getElementById('nome') as HTMLElement).focus();
   }
 
   adicionar() {
+    if (this.pessoa.nome === undefined) {
+      return alert('O campo Nome não foi preenchido')
+    }
     this.listaPessoa.push(this.pessoa)
     this.pessoa = new Pessoa;
+    (document.getElementById('nome') as HTMLElement).focus();
   }
 }
